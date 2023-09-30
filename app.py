@@ -1,12 +1,11 @@
 from flask import Flask, render_template, request, redirect
-from cs50 import SQL
-import pandas as pd
+import sqlite3
 from assistfunctions import pizza, home_away, by_season
 
 
 app = Flask(__name__)
-# Configure Library to use SQLite database
-db = SQL("sqlite:///db_soccer.db")
+# Create a SQLite database connection
+db = sqlite3.connect("db_soccer.db")
 
 
 
@@ -191,4 +190,4 @@ def stats():
                                league=league)
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=True)

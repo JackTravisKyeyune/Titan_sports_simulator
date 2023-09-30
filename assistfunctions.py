@@ -1,4 +1,4 @@
-from cs50 import SQL
+import sqlite3
 
 
 def pizza(wld,labels=['Wins','Losses','Draws'],colors = ["#46BFBD", "#F7464A", "#FDB45C"]):
