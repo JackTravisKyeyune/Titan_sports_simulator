@@ -1,3 +1,4 @@
+import cs50
 import sqlite3
 
 

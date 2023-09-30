@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request, redirect
+import cs50
 import sqlite3
+import pandas as pd
 from assistfunctions import pizza, home_away, by_season
 
 
 app = Flask(__name__)
-# Create a SQLite database connection
-db = sqlite3.connect("db_soccer.db")
+# Configure CS50 Library to use SQLite database
+db = cs50.SQL("sqlite:///db_soccer.db")
 
 
 

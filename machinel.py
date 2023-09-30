@@ -1,3 +1,6 @@
+import cs50
+import random
+import pandas as pd  # Import pandas library
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import confusion_matrix, r2_score
 from catboost import CatBoostRegressor
